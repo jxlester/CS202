@@ -1,0 +1,83 @@
+/* coments */
+/* version 1.0 
+Author: Jacob Lester
+Website lesson3.com */
+/*
+Table of contents
+1. CSS variables
+2. Header
+3. etc... */
+
+body{
+    background-color: #e6e6d7;
+    color: #191970;
+}
+
+p{
+    /*font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 16px; px, %, em, rem*/
+
+    /* font shorthand */
+    /* font: font-style font-variant font-weight
+    font-size/ line-height font-family*/
+
+    font: italic normal normal 16px/1.5 arial;
+}
+h2 {
+    /*google fonts*/
+
+    /* text-shadow: horizontal vertical blur-radius color */
+    text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+main{
+    box-shadow: 0 1px 5px rgba (0,0,0,rgba(0,0,0,0.5);
+}
+/* selector - elements, id, classes, contextual,
+multiple selectors */
+/* id*/
+#sideright{
+
+}
+/* class */
+.sideleft{
+
+}
+/* contextual */
+header h1{
+
+}
+nav,footer,header,section{
+    display: block;
+}
+
+/* important rule */
+h3{
+    color: blue !important;
+}
+
+/* css variable */
+
+:root{
+    --main-color: #05a081;
+    --margin: 40px;
+    --font-size: 1.5rem;
+    --bg-color: #333;
+}
+
+h2{
+    background-color: var(--main-color);
+    margin: var(--margin);
+}
+
+p{
+    font-size: var(--font-size);
+}
+
+.banner{
+    background-image: url(../images/backgroun.jpg);
+    width: 100%;
+    height: 500px;
+}
